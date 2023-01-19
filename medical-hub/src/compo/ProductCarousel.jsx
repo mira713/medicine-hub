@@ -35,7 +35,7 @@ function ProductCarousel({ category }) {
       dots:true,
       infinte:true,
       speed:500,
-      slidesToShow:5,
+      slidesToShow:4,
       slidesToScroll:1,
       cssEase:"linear"
   };
@@ -48,7 +48,7 @@ function ProductCarousel({ category }) {
         </Text>
         <Spacer />
       </Flex>
-      <Box position="relative" overflow={"hidden"} shadow={"lg"}>
+      <Box position="relative" overflow={"hidden"} shadow={"lg"}> 
        <Slider {...settings} style={{marginBottom:"50px",display:"block"}}>
        
         {
