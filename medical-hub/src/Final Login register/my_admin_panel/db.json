@@ -1,0 +1,41 @@
+{
+  "user": [
+    {
+      "id": "Samruddhi",
+      "name": "Samruddhi chavan",
+      "password": "789456123",
+      "email": "sam@gmail.com",
+      "phone": "Seller",
+      "country": "india",
+      "address": "",
+      "gender": "female"
+    },
+    {
+      "id": "sam",
+      "name": "sam",
+      "password": "12345",
+      "email": "sam@gmail.com",
+      "phone": "seller",
+      "gender": "female"
+    },
+    {
+      "id": "Sam",
+      "name": "Samruddhi",
+      "password": "852147",
+      "email": "s@gmail.com",
+      "phone": "Seller",
+      "gender": "female"
+    },
+    {
+      "id": "Sammy",
+      "name": "Samruddhi",
+      "password": "masai",
+      "email": "sam@gmail.com",
+      "phone": "seller",
+      "gender": "female"
+    }
+  ],
+  "product": [
+    {}
+  ]
+}
