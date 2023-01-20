@@ -177,6 +177,20 @@ export default function Disease() {
       >
         {el["price"] ? `₹${el["price"]}` : null}
       </Heading>
+      <Button
+          w={"100%"}
+          id={"btn" + el.id}
+          size={"md"}
+          // onClick={(e) => handleAdd(e, el.id, el)}
+          borderRadius="5px"
+          bg={"#ff6f61"}
+          _hover={{
+            bg: "#ff4f61",
+          }}
+          color="#fff"
+        >
+          Add To Cart
+        </Button>
     </Box>
         ))}
       </Slider>
