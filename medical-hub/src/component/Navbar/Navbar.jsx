@@ -14,11 +14,11 @@ import {
   useDisclosure,
   Heading,
   Divider,
-  Avatar,
+
 } from "@chakra-ui/react";
 import { GrCart } from "react-icons/gr";
 
-import { FaShoppingCart } from "react-icons/fa";
+
 import { Link as RouterLink } from "react-router-dom";
 import logo from "./logo1.png";
 
@@ -55,16 +55,7 @@ const NAV_ITEMS = [
   },
 ];
 
-const AUTH_ITEMS = [
-  {
-    label: "Login",
-    href: "/login",
-  },
-  {
-    label: "Signup",
-    href: "/signup",
-  },
-];
+
 
 export default function WithSubnavigation() {
   // const { cartCount } = useContext(CartContext);
@@ -140,7 +131,11 @@ export default function WithSubnavigation() {
               Sign Up
             </Button>
           </Stack>
+<Link> Admin</Link>
         {/* )} */}
+       
+
+       
 
         <Flex justify="space-around" m={"0 20px"} gap={"20px"} align="center">
           <Text

@@ -11,8 +11,7 @@ import {
   ModalBody,
   Input,
   Button,
-  HStack,
-  useDisclosure,
+  
   FormControl,
   FormLabel,
   FormErrorMessage,
@@ -58,7 +57,7 @@ export default function LoginCommon({ isOpen, onClose, details }) {
     inputLabel,
     inputWarning,
     buttonTitle,
-    one,
+
     two,
     three,
   } = details;

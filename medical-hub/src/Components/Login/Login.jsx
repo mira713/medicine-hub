@@ -7,15 +7,14 @@ import {
   ModalHeader,
   ModalCloseButton,
   ModalBody,
-  FormControl,
-  FormLabel,
+
   Input,
-  ModalFooter,
+ 
   Button,
   Box,
 } from "@chakra-ui/react";
 import { lightOrange } from "../../Colors/Color";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch} from "react-redux";
 import { coupon } from "../../Redux/action";
 
 export default function Coupon() {
@@ -23,7 +22,7 @@ export default function Coupon() {
   const dispatch = useDispatch();
   const initialRef = React.useRef(null);
   const finalRef = React.useRef(null);
-  const discount = useSelector((stroe) => stroe.couponDiscount);
+
   const ref = useRef(null);
   const [code, setCode] = useState({
     masai: false,
