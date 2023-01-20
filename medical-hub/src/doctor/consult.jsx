@@ -71,6 +71,12 @@ title:"Neorolist"
 }
 ]
 
+const d =[
+  {
+    id:1,
+    title:""
+  }
+]
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -182,6 +188,9 @@ const settings = {
         </Flex>
         <Image src='https://www.1mg.com/images/How_it_Works_4.svg' alt="4" h="45vh" marginLeft={["430%","20%"]} />
       </SimpleGrid>
+    </Box>
+    <Box>
+
     </Box>
    </>
   )

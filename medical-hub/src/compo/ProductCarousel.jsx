@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { CarouselData } from "./API";
-// import CarouselCard from "./CarouselCard";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -18,26 +17,25 @@ function ProductCarousel({ category }) {
   }, []);
  console.log(data)
 
-  const slider = document.getElementById("slider");
-  const handlePrev = () => {
-    let w = slider.clientWidth;
-    slider.scrollLeft = slider.scrollLeft - w;
-  };
+  // const slider = document.getElementById("slider");
+  // const handlePrev = () => {
+  //   let w = slider.clientWidth;
+  //   slider.scrollLeft = slider.scrollLeft - w;
+  // };
 
-  const handleNext = (e) => {
-    console.log('fist',e)
-    let w = slider.clientWidth;
-    slider.scrollRight = slider.scrollRight - w;
-    console.log(e);
-  };
-
+  // const handleNext = (e) => {
+  //   console.log('fist',e)
+  //   let w = slider.clientWidth;
+  //   slider.scrollRight = slider.scrollRight - w;
+  //   console.log(e);
+  // };
+//console.log(data.length)
   let settings ={
       dots:true,
-      infinte:true,
       speed:500,
-      slidesToShow:4,
+      slidesToShow:5,
       slidesToScroll:1,
-      cssEase:"linear"
+      infinite:true
   };
   return (
    
