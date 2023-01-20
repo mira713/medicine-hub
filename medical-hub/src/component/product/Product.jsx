@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import {
   Text,
@@ -18,6 +18,7 @@ import Slider from "react-slick";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getProductFun } from "./../../redux/ProductAction";
+import { CartContext } from "../../cart/CartContext";
 
 // Settings for the slider
 const settings = {
@@ -61,8 +62,18 @@ export default function LightningDeals() {
   const datas = useSelector((store) => store.data);
   console.log(datas);
   const dispatch = useDispatch();
+  const { handleCartCount, handleCartProduct } = useContext(CartContext);
 
   // These are the images used in the slide
+
+  const handleAdd = (e, i, p) => {
+    handleCartCount(1);
+    const btn = document.getElementById("btn" + i);
+    btn.disabled = true;
+    e.target.childNodes[0].data = "Added";
+    handleCartProduct({ p });
+  };
+
 
   useEffect(() => {
     dispatch(getProductFun());
@@ -174,6 +185,20 @@ export default function LightningDeals() {
             >
               {el["price"] ? `₹${el["price"]}` : null}
             </Heading>
+            <Button
+          w={"100%"}
+          id={"btn" + el.id}
+          size={"md"}
+          onClick={(e) => handleAdd(e, el.id, el)}
+          borderRadius="5px"
+          bg={"#ff6f61"}
+          _hover={{
+            bg: "#ff4f61",
+          }}
+          color="#fff"
+        >
+          Add To Cart
+        </Button>
           </Box>
         ))}
       </Slider>

@@ -1,24 +1,17 @@
-
 import "./App.css";
+
 import Navbar from "./component/Navbar/Navbar";
 import Category from "../src/component/Navbar/Category.jsx";
 import SearchNav from "../src/component/Navbar/searchnav.jsx";
+import AllRoute from "./AllRoute/AllRoute";
 
-import AllRoutes from "./AllRoutes/AllRoutes";
-
-
-import Category from './compo/Category'
-import Consult from "./doctor/consult"
 function App() {
   return (
-    <div className="App">
-
+    <div>
       <Navbar />
       <SearchNav />
       <Category />
-
-      <AllRoutes />
-
+      <AllRoute />
     </div>
   );
 }
