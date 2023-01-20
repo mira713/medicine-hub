@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
 
+import "./App.css";
+import Navbar from "./component/Navbar/Navbar";
+import Category from "../src/component/Navbar/Category.jsx";
+import SearchNav from "../src/component/Navbar/searchnav.jsx";
+
+import AllRoutes from "./AllRoutes/AllRoutes";
+
+
+import Category from './compo/Category'
+import Consult from "./doctor/consult"
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Navbar />
+      <SearchNav />
+      <Category />
+
+      <AllRoutes />
+
     </div>
   );
 }
