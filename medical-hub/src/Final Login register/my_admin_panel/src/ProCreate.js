@@ -28,15 +28,10 @@ const ProCreate = () => {
       console.log(err.message)
     })
   }
-
-
-
-
-
-
-
-
-  return <div>ProCreate</div>
+  return <div>
+    
+    
+  </div>
 }
 
 export default ProCreate
