@@ -18,14 +18,15 @@ import {
 } from "@chakra-ui/react";
 import { GrCart } from "react-icons/gr";
 
-import { FaShoppingCart } from "react-icons/fa";
+
 import { Link as RouterLink } from "react-router-dom";
 import logo from "./logo1.png";
 
 import { HamburgerIcon, CloseIcon, ChevronDownIcon } from "@chakra-ui/icons";
-// import { AuthContext } from "../../Contexts/AuthContext";
-// import { useContext } from "react";
-// import UserCard from "../Auth/UserCard";
+import { AuthContext } from "../../context/AuthContext"
+import { useContext } from "react";
+
+import UserCard from "../Login_finally/Auth/UserCard"
 // import { CartContext } from "../../Contexts/CartContext";
 
 const NAV_ITEMS = [
@@ -68,7 +69,7 @@ const AUTH_ITEMS = [
 
 export default function WithSubnavigation() {
   // const { cartCount } = useContext(CartContext);
-  // const { isReg } = useContext(AuthContext);
+  const { isReg } = useContext(AuthContext);
   const { isOpen, onToggle } = useDisclosure();
 
   return (
@@ -108,9 +109,9 @@ export default function WithSubnavigation() {
             <DesktopNav />
           </Flex>
         </Flex>
-        {/* {isReg ? (
+        {isReg ? (
           <UserCard />
-        ) : ( */}
+        ) : (
           <Stack
             flex={{ base: 1, md: 0 }}
             justify={"flex-end"}
@@ -140,7 +141,7 @@ export default function WithSubnavigation() {
               Sign Up
             </Button>
           </Stack>
-        {/* )} */}
+        )} 
 
         <Flex justify="space-around" m={"0 20px"} gap={"20px"} align="center">
           <Text
@@ -224,14 +225,14 @@ const DesktopNav = () => {
 };
 
 const MobileNav = () => {
-  // const { isReg, userData, handleIsReg, handleUser } = useContext(AuthContext);
+  const { isReg, userData, handleIsReg, handleUser } = useContext(AuthContext);
   return (
     <Stack
       bg={useColorModeValue("white", "gray.800")}
       p={4}
       display={{ md: "none" }}
     >
-      {/* {isReg ? (
+      {isReg ? (
         <Flex
           rounded={"full"}
           variant={"link"}
@@ -274,7 +275,7 @@ const MobileNav = () => {
         AUTH_ITEMS.map((navItem) => (
           <MobileNavItem key={navItem.label} {...navItem} />
         ))
-      )} */}
+      )}
 
       <Divider />
       {NAV_ITEMS.map((navItem) => (

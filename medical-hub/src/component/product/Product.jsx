@@ -18,7 +18,7 @@ import Slider from "react-slick";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getProductFun } from "./../../redux/ProductAction";
-import { CartContext } from "../../cart/CartContext";
+// import { CartContext } from "../../cart/CartContext";
 
 // Settings for the slider
 const settings = {
@@ -62,17 +62,17 @@ export default function LightningDeals() {
   const datas = useSelector((store) => store.data);
   console.log(datas);
   const dispatch = useDispatch();
-  const { handleCartCount, handleCartProduct } = useContext(CartContext);
+  // const { handleCartCount, handleCartProduct } = useContext(CartContext);
 
   // These are the images used in the slide
 
-  const handleAdd = (e, i, p) => {
-    handleCartCount(1);
-    const btn = document.getElementById("btn" + i);
-    btn.disabled = true;
-    e.target.childNodes[0].data = "Added";
-    handleCartProduct({ p });
-  };
+  // const handleAdd = (e, i, p) => {
+  //   handleCartCount(1);
+  //   const btn = document.getElementById("btn" + i);
+  //   btn.disabled = true;
+  //   e.target.childNodes[0].data = "Added";
+  //   handleCartProduct({ p });
+  // };
 
 
   useEffect(() => {
@@ -189,7 +189,7 @@ export default function LightningDeals() {
           w={"100%"}
           id={"btn" + el.id}
           size={"md"}
-          onClick={(e) => handleAdd(e, el.id, el)}
+          // onClick={(e) => handleAdd(e, el.id, el)}
           borderRadius="5px"
           bg={"#ff6f61"}
           _hover={{
