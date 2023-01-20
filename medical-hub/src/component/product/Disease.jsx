@@ -5,7 +5,7 @@ import Slider from "react-slick";
 // import AddCart from "../AddCart";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getComboFun, getDiseaseFun } from "./../../redux/ProductAction";
+import {  getDiseaseFun } from "./../../redux/ProductAction";
 
 
 // Settings for the slider
