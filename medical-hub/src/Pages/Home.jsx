@@ -6,7 +6,7 @@ import Disease from '../component/product/Disease';
 import Medicine from '../component/product/Medicine';
 
 import LightningDeals from './../component/product/Product';
-import Footer from "../component/Footer/Footer"
+// import Footer from "../component/Footer/Footer"
 import HomeFooter from "../component/Footer/HomeFooter"
 
 const Home = () => {
@@ -19,7 +19,7 @@ const Home = () => {
    <Medicine/>
    <Disease/>
    <HomeFooter/>
-     <Footer/>
+     {/* <Footer/> */}
     </div>
   )
 }

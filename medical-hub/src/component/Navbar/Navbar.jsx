@@ -40,7 +40,7 @@ const NAV_ITEMS = [
   },
   {
     label: "CONSULT DOCTORS",
-    href: "/products",
+    href: "/Doctor",
   },
   {
     label: "COVID-19",
