@@ -3,7 +3,7 @@ import {Box,Flex,Text,Divider,Heading,Input,Button,Image,SimpleGrid } from '@cha
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import './consult.module.css'
+
 
 const datass=[
   {
