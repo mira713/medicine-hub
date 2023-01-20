@@ -18,6 +18,7 @@ import Slider from "react-slick";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getProductFun } from "./../../redux/ProductAction";
+import { Link } from "react-router-dom";
 // import { CartContext } from "../../cart/CartContext";
 
 // Settings for the slider
@@ -134,10 +135,10 @@ export default function LightningDeals() {
       {/* Slider */}
       <Box display={"flex"} justifyContent="space-between">
         <Box>
-          <Heading fontSize={{base:"20px",md:"none"}}>Vitamins & Suppliments | supplement of the week</Heading>
+          <Heading fontSize={{base:"20px",md:"none"}} ml="10px">Vitamins & Suppliments | supplement of the week</Heading>
         </Box>
         <Box>
-          <Button colorScheme="red">SEE ALL</Button>
+        <Link to={"/medicine"}><Button colorScheme="red">SEE ALL</Button></Link> 
         </Box>
       </Box>
      
