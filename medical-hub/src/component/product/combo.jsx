@@ -14,6 +14,7 @@ import Slider from "react-slick";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getComboFun } from "./../../redux/ProductAction";
+import { Link } from "react-router-dom";
 
 // Settings for the slider
 const settings = {
@@ -117,10 +118,10 @@ export default function Combo() {
 
       <Box display={"flex"} justifyContent="space-between">
         <Box>
-          <Heading>Popular Combo Deals</Heading>
+          <Heading ml="10px">Popular Combo Deals</Heading>
         </Box>
         <Box>
-          <Button colorScheme="red">SEE ALL</Button>
+         <Link to={"/medicine"}><Button colorScheme="red">SEE ALL</Button></Link> 
         </Box>
       </Box>
 

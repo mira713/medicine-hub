@@ -32,7 +32,7 @@ import UserCard from "../Login_finally/Auth/UserCard"
 const NAV_ITEMS = [
   {
     label: "MEDICINES",
-    href: "category/medicine",
+    href: "/",
   },
   {
     label: "LAB TESTS" ,

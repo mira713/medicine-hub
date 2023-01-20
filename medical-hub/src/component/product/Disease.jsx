@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {  getDiseaseFun } from "./../../redux/ProductAction";
+import { Link } from "react-router-dom";
 
 
 // Settings for the slider
@@ -110,10 +111,10 @@ export default function Disease() {
       </IconButton>
       <Box display={"flex"} justifyContent="space-between">
         <Box>
-          <Heading>Disease</Heading>
+          <Heading ml="10px">Disease</Heading>
         </Box>
         <Box>
-          <Button colorScheme="red">SEE ALL</Button>
+        <Link to={"/medicine"}><Button colorScheme="red">SEE ALL</Button></Link> 
         </Box>
       </Box>
       {/* Slider */}
