@@ -14,6 +14,8 @@ import ProDetail from './../samAdmin/ProDetail';
 import ProEdit from './../samAdmin/ProEdit';
 import AdminLogin from "../samAdmin/AdminLogin";
 
+import Searched from '../component/medicine/searched'
+
 const AllRoute = () => {
   return (
     <Routes>
@@ -31,6 +33,12 @@ const AllRoute = () => {
           <Route path="/product/create" element={<ProCreate />}></Route>
           <Route path="/product/detail/:proid" element={<ProDetail />}></Route>
           <Route path="/product/edit/:proid" element={<ProEdit />}></Route>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/login' element={<Login/>}></Route>
+        <Route path='/signup' element={<Signup/>}></Route>
+        <Route path="/Doctor" element={<Doctor/>}/>
+        <Route path="/medicine" element={<Medicine/>}/>
+        <Route path="/Searched" element={<Searched/>}/>
     </Routes>
   );
 };
