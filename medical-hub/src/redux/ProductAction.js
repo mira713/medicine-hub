@@ -1,6 +1,6 @@
 
 import  axios  from 'axios';
-import { ADDCART, GET_COMBO, GET_DISEASE, GET_MEDICINE, GET_PRODUCT } from './ProductType';
+import {  CART_SUCCESS, GET_COMBO, GET_DISEASE, GET_MEDICINE, GET_PRODUCT } from './ProductType';
 export const getProductFun=()=>async(dispatch)=>{
 
     try {
@@ -46,6 +46,24 @@ export const getDiseaseFun=()=>async(dispatch)=>{
 }
 
 
+export const takeMeToCart = (data) => ({
+    type: CART_SUCCESS,
+    payload: data,
+  });
+  
 
+  export const cartData = (payload) => (dispatch) => {
+    axios("https://link-ten-zeta.vercel.app/cart")
+      .then((res) => {
+        console.log(res.data);
+        let cartAction = takeMeToCart(res.data);
+        dispatch(cartAction);
+        // alert('cart success')
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  };
+  
 
   
