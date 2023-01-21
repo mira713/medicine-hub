@@ -2,8 +2,8 @@ import React,{useState,useRef } from 'react'
 import emailjs from '@emailjs/browser';
 import {Box,Flex,Text,Divider,Heading,Input,Button,Image,SimpleGrid, useToast } from '@chakra-ui/react'
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 const datass=[
@@ -111,18 +111,16 @@ let onChange=(e)=>{
 const sendEmail = (e) => {
   e.preventDefault();
 
-  toast({
-    title: 'query taken',
-    description: "thanks for choosing us, we are proccessing your query",
-    status: 'success',
-    duration: 9000,
-    isClosable: true,
-  })
-
   emailjs.sendForm('service_n4ys4b3', 'template_04wzh47', form.current, 'hsInv32YWaPjiMsSl')
     .then((result) => {
         console.log(result.text);
-        alert('thanks for contacting me!')
+        toast({
+          title: 'query taken',
+          description: "thanks for choosing us, we are proccessing your query",
+          status: 'success',
+          duration: 9000,
+          isClosable: true,
+        })      
     }, (error) => {
         console.log(error.text);
     });
@@ -146,10 +144,9 @@ const settings = {
         Consult a doctor at your ease</Text><Divider/><br/><br/>
         
         <form onSubmit={sendEmail} ref={form} >
-                
                 <Input className="user" placeholder="Type Your Problem" name="message"/>
                 <Button className="button" value="send" type="submit" bg={"#ff6f61"} color="white" mt={"20px"}>send</Button>
-            </form>
+        </form>
         <br/><br/>
         < Image src="http://onemg.gumlet.io/marketing/ea05db01-99cf-4efc-bed1-04b3b2086d11.png" width="100%"/>
 
