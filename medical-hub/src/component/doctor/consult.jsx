@@ -1,5 +1,6 @@
-import React from 'react'
-import {Box,Flex,Text,Divider,Heading,Input,Button,Image,SimpleGrid } from '@chakra-ui/react'
+import React,{useState,useRef } from 'react'
+import emailjs from '@emailjs/browser';
+import {Box,Flex,Text,Divider,Heading,Input,Button,Image,SimpleGrid, useToast } from '@chakra-ui/react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -100,31 +101,59 @@ function SamplePrevArrow(props) {
 }
 
 const Consult = () => {
+let [mes, setMes] = useState('');
+const form = useRef();
+const toast = useToast()
 
+let onChange=(e)=>{
+  setMes(e.target.value)
+}
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  toast({
+    title: 'query taken',
+    description: "thanks for choosing us, we are proccessing your query",
+    status: 'success',
+    duration: 9000,
+    isClosable: true,
+  })
+
+  emailjs.sendForm('service_n4ys4b3', 'template_04wzh47', form.current, 'hsInv32YWaPjiMsSl')
+    .then((result) => {
+        console.log(result.text);
+        alert('thanks for contacting me!')
+    }, (error) => {
+        console.log(error.text);
+    });
+};
 const settings = {
   dots: false,
   infinite: true,
   slidesToShow: 6,
-  slidesToScroll: 1,
+  slidesToScroll: 2,
   nextArrow: <SampleNextArrow />,
   prevArrow: <SamplePrevArrow />
 };
   return (
     <>
     <br/>
-   <Flex gap="20px">
+   <Flex gap="20px" marginLeft={"20px"}>
      <Box textAlign={"left"} letterSpacing={"1px"} >
       <Heading fontSize={30} >Consult with Doctors across 22+ Specialities,over </Heading><Divider/>
       <Heading size="lg" color="#941c4d">Chat, Video & Voice calls.</Heading><Divider/><br/>
       <Text fontSize={20} color={"grey"}>Skip the struggle of booking appointments.
         Consult a doctor at your ease</Text><Divider/><br/><br/>
-        <form>
-        <Input variant='filled' placeholder='type your problem' /><br/><br/>
-        <Button bg="#ff6f61" color="white" _hover={{bg:"#ff6f61"}}>Consult Doctor</Button>
+        
+        <form onSubmit={sendEmail} ref={form} >
+                
+                <Input className="user" placeholder="Type Your Problem" name="message"/>
+                <Button className="button" value="send" type="submit" bg={"#ff6f61"} color="white" mt={"20px"}>send</Button>
+            </form>
         <br/><br/>
         < Image src="http://onemg.gumlet.io/marketing/ea05db01-99cf-4efc-bed1-04b3b2086d11.png" width="100%"/>
 
-        </form>
+      
      </Box>
      <Box>
      <video loop autoPlay muted>
@@ -137,7 +166,7 @@ const settings = {
 
    <Box  shadow={"lg"} color="#212121" bg={"#f0f1f2"} h={['0vh',"20vh","30vh","38vh"]} overflow="hidden">
     <Text fontSize={30} color={"grey"}>Chat with our specialist doctors</Text><br/>
-   <Slider {...settings}>
+   <Slider {...settings} >
         {
             datass.map((item)=>(
               <div key={item.id}>
