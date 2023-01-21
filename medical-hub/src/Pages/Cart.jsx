@@ -80,11 +80,11 @@ const Cart = () => {
     <>
     
       <Box height={"auto"} bg={"#F3F7FB"}>
-        <Box flexWrap="wrap" p={5} width={"80%"} m={"auto"} height={"auto"}>
+        <Box flexWrap="wrap" p={5} width={"80%"} m={"auto"} height={"auto"} display={{base:"none",md:"grid"}}>
           <Text>Order Summary</Text>
 
           <Box display={"flex"}>
-            <Box ml={-10}>
+            <Box ml={-10} >
               <CartCarousel/>
             </Box>
             <Box mt={8} p={5} rounded={"md"} bg={"white"} width={325}>
@@ -107,22 +107,23 @@ const Cart = () => {
         </Box>
 
         <Box
-          display={"flex"}
+          display={"grid"}
+          gridTemplateColumns={{base:"repeat (2,1fr)",md:"repeat(1,1fr)"}}
           gap={8}
           mt={5}
-          width={"76%"}
-          ml={125}
+         
+         
           height={"auto"}
         >
-          <Box bg={"white"} p={0} rounded={5} height={"auto"} width={"100%"}>
-            <Text p={5} pb={0} fontSize={"sm"} color={"grey"} mb={0}>
+          <Box bg={"white"} p={0} rounded={5} height={"auto"}  border="1px solid red">
+            <Text p={5} pb={0} fontSize={"lg"} color={"grey"} mb={0}>
               PRODUCTS
             </Text>
             {console.log(cart_Data, "vvv")}
             {cart_Data.map((el) => (
               <Box
                 key={el.id}
-                fontSize={"sm"}
+                fontSize={"md"}
                 display={"flex"}
                 height={190}
                 lineHeight={6}
@@ -130,7 +131,7 @@ const Cart = () => {
                 p={3}
               >
                 <Box>
-                  <Image height={42} mr={10} src={el.imageUrl} alt="" />
+                  <Image height={"50%"} mr={10} src={el.imageUrl} alt="" />
                 </Box>
                 <Box>
                   <Text fontSize={"md"} fontWeight={500}>
@@ -196,10 +197,10 @@ const Cart = () => {
               display={"flex"}
               p={4}
             >
-              <Text fontSize={"small"} fontWeight={500}>
+              <Text fontSize={"md"} fontWeight={500}>
                 ADD MORE ITEMS
               </Text>
-              <Link to="/wellness/covidEssentials">
+              <Link to="/">
                 {" "}
                 <AddIcon />
               </Link>
@@ -211,14 +212,15 @@ const Cart = () => {
             rounded={"md"}
             p={5}
             pr={8}
-            width={470}
+           
             height={300}
+            border="1px solid black"
           >
-            <Text mb={1} color={"grey"} fontSize={"sm"}>
+            <Text mb={1} color={"grey"} fontSize={"lg"}>
               PAYMENT DETAILS
             </Text>
             <Box
-              fontSize={"sm"}
+              fontSize={"md"}
               mt={3}
               justifyContent={"space-between"}
               display={"flex"}
@@ -232,11 +234,11 @@ const Cart = () => {
               justifyContent={"space-between"}
               display={"flex"}
             >
-              <Text> Nedmeds Discount</Text>
+              <Text> Medicine Hub Discount</Text>
               <Text>-Rs,75.00</Text>
             </Box>
             <Box
-              fontSize={"sm"}
+              fontSize={"md"}
               fontWeight={500}
               mt={3}
               justifyContent={"space-between"}
@@ -267,7 +269,7 @@ const Cart = () => {
               display={"flex"}
             >
               <Box>
-                <Text fontSize={"xs"}>TOTAL AMOUNT</Text>
+                <Text fontSize={"md"}>TOTAL AMOUNT</Text>
                 <Text fontSize={"larger"}>Rs,{discountedPrice}</Text>
               </Box>
               <Box>
