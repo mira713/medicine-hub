@@ -14,6 +14,8 @@ import Slider from "react-slick";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getComboFun } from "./../../redux/ProductAction";
+import { Link } from "react-router-dom";
+import AddCart from "../../Pages/AddCart";
 
 // Settings for the slider
 const settings = {
@@ -117,10 +119,10 @@ export default function Combo() {
 
       <Box display={"flex"} justifyContent="space-between">
         <Box>
-          <Heading>Popular Combo Deals</Heading>
+          <Heading ml="10px">Popular Combo Deals</Heading>
         </Box>
         <Box>
-          <Button colorScheme="red">SEE ALL</Button>
+         <Link to={"/medicine"}><Button colorScheme="red">SEE ALL</Button></Link> 
         </Box>
       </Box>
 
@@ -169,20 +171,7 @@ export default function Combo() {
             >
               {el["price"] ? `₹${el["price"]}` : null}
             </Heading>
-            <Button
-          w={"100%"}
-          id={"btn" + el.id}
-          size={"md"}
-          // onClick={(e) => handleAdd(e, el.id, el)}
-          borderRadius="5px"
-          bg={"#ff6f61"}
-          _hover={{
-            bg: "#ff4f61",
-          }}
-          color="#fff"
-        >
-          Add To Cart
-        </Button>
+            <AddCart key={el.id} prodData={el} />
           </Box>
         ))}
       </Slider>

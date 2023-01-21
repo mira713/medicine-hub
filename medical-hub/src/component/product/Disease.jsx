@@ -6,6 +6,8 @@ import Slider from "react-slick";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {  getDiseaseFun } from "./../../redux/ProductAction";
+import { Link } from "react-router-dom";
+import AddCart from "../../Pages/AddCart";
 
 
 // Settings for the slider
@@ -110,10 +112,10 @@ export default function Disease() {
       </IconButton>
       <Box display={"flex"} justifyContent="space-between">
         <Box>
-          <Heading>Disease</Heading>
+          <Heading ml="10px">Disease</Heading>
         </Box>
         <Box>
-          <Button colorScheme="red">SEE ALL</Button>
+        <Link to={"/medicine"}><Button colorScheme="red">SEE ALL</Button></Link> 
         </Box>
       </Box>
       {/* Slider */}
@@ -177,20 +179,7 @@ export default function Disease() {
       >
         {el["price"] ? `₹${el["price"]}` : null}
       </Heading>
-      <Button
-          w={"100%"}
-          id={"btn" + el.id}
-          size={"md"}
-          // onClick={(e) => handleAdd(e, el.id, el)}
-          borderRadius="5px"
-          bg={"#ff6f61"}
-          _hover={{
-            bg: "#ff4f61",
-          }}
-          color="#fff"
-        >
-          Add To Cart
-        </Button>
+      <AddCart key={el.id} prodData={el} />
     </Box>
         ))}
       </Slider>

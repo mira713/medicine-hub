@@ -1,11 +1,11 @@
-import { GET_COMBO, GET_DISEASE, GET_MEDICINE, GET_PRODUCT } from "./ProductType";
+import { GET_COMBO, GET_DISEASE, GET_MEDICINE, GET_PRODUCT,CART_SUCCESS } from "./ProductType";
 
 const initialState = {
   data: [],
   data1:[],
   data2:[],
   data3:[],
-
+  cart: [],
 };
 
 const ProductReducer = (state = initialState, { type, payload }) => {
@@ -37,7 +37,12 @@ const ProductReducer = (state = initialState, { type, payload }) => {
         data3:payload
       }
     }
-
+    case CART_SUCCESS: {
+      return {
+        ...state,
+        cart: payload,
+      };
+    }
     
 
 
