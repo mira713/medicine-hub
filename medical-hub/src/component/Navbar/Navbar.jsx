@@ -25,8 +25,9 @@ import logo from "./logo1.png";
 import { HamburgerIcon, CloseIcon, ChevronDownIcon } from "@chakra-ui/icons";
 import { AuthContext } from "../../context/AuthContext"
 import { useContext } from "react";
-
+import { cartData } from "../../redux/ProductAction"
 import UserCard from "../Login_finally/Auth/UserCard"
+import { useSelector } from "react-redux";
 // import { CartContext } from "../../Contexts/CartContext";
 
 const NAV_ITEMS = [
@@ -71,6 +72,12 @@ export default function WithSubnavigation() {
   // const { cartCount } = useContext(CartContext);
   const { isReg } = useContext(AuthContext);
   const { isOpen, onToggle } = useDisclosure();
+
+
+  const counter = useSelector((state) => state.cart);
+  console.log(counter.length);
+
+  let count = counter.length;
 
   return (
     <Box>
@@ -169,7 +176,7 @@ export default function WithSubnavigation() {
                   marginTop="-5px"
                   marginLeft="-2px"
                 >
-                  {/* {cartItems.length} */}
+                  {count}
                 </Box>
               </Flex>
           </RouterLink>
