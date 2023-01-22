@@ -9,15 +9,15 @@ Netlify link :- https://medical-hub.vercel.app/
   <li>CSS</li>
   <li>JavaScript</li>
   <li>React.js</li>
-  <li>MongoDB</li>
   <li>Redux</li>
-  <li>Express.js</li>
-  <li>Node.js</li>
+  <li>Rest API</li>
+  <li>Chakra UI</li>
+  <li>BootStarp</li>
   <hr><br>
 <h2>Features :</h2><br>
   <li>Homepage - The landing Page</li>
   <li>Login/Signup Page </li>
-  <li>AdminPage</li>
+  <li>Admin Panel</li>
   <li>Product Page to browse all products based on categories</li>
   <li>Sort products by prices and ratings</li>
   <li>Filter products by brands and discounts</li>
