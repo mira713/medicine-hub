@@ -115,7 +115,7 @@ const Cart = () => {
          
           height={"auto"}
         >
-          <Box bg={"white"} p={0} rounded={5} height={"auto"}  border="1px solid red">
+          <Box bg={"white"} p={0} rounded={5} height={"auto"}  >
             <Text p={5} pb={0} fontSize={"lg"} color={"grey"} mb={0}>
               PRODUCTS
             </Text>
@@ -214,7 +214,7 @@ const Cart = () => {
             pr={8}
            
             height={300}
-            border="1px solid black"
+           
           >
             <Text mb={1} color={"grey"} fontSize={"lg"}>
               PAYMENT DETAILS
