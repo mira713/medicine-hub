@@ -1,20 +1,23 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
-import Home from "../Pages/Home";
-import Login from "../Pages/login";
-import Signup from "./../Pages/Signup";
-import Doctor from "../component/doctor/consult";
-import Medicine from "../component/medicine/Category";
-import Cart from "../Pages/Cart";
-import Success from "./../Pages/Success";
-import Payment from "./../Pages/Payment";
-import ProListing from "./../samAdmin/ProListing";
-import ProCreate from "./../samAdmin/ProCreate";
-import ProDetail from "./../samAdmin/ProDetail";
-import ProEdit from "./../samAdmin/ProEdit";
-import AdminLogin from "../samAdmin/AdminLogin";
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Home from '../Pages/Home'
+import Login from '../Pages/login'
+import Signup from './../Pages/Signup'
+import Doctor from '../component/doctor/consult'
+import Medicine from '../component/medicine/Category'
+import Cart from '../Pages/Cart'
+import Success from './../Pages/Success'
+import Payment from './../Pages/Payment'
+import ProListing from './../samAdmin/ProListing'
+import ProCreate from './../samAdmin/ProCreate'
+import ProDetail from './../samAdmin/ProDetail'
+import ProEdit from './../samAdmin/ProEdit'
+import AdminLogin from '../samAdmin/AdminLogin'
+import Searched from '../component/medicine/searched'
+import { LabTests } from '../component/Labtest/labtest'
+import Covid19Header from  "../component/Covid19/Covid19Header"
+import AyurvedaPage from '../Pages/AyurvedaPage'
 
-import Searched from "../component/medicine/searched";
 
 const AllRoute = () => {
   return (
@@ -39,8 +42,12 @@ const AllRoute = () => {
       <Route path="/Doctor" element={<Doctor />} />
       <Route path="/medicine" element={<Medicine />} />
       <Route path="/Searched" element={<Searched />} />
-    </Routes>
-  );
-};
+      <Route path="/LabTests" element={<LabTests />} />
 
-export default AllRoute;
+      <Route path="/Covid19" element={<Covid19Header />} />
+      <Route path='/Ayurveda' element={<AyurvedaPage/>}/>
+    </Routes>
+  )
+}
+
+export default AllRoute
