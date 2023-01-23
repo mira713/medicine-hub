@@ -23,8 +23,22 @@ Sign-up/Login, Add to Cart, Admin Panel, Payment Feature, Consult to a Doctor Fe
 ### `Sign-up/Login`
 
 step 1 : One can Sign-up in our webSite and the main navBar will show his/her name on the main page.
+
 step 2 : click on sign-up
-step 3 : put your name and 
+
+step 3 : put your name and phone number
+
+step 4 : you can see your name on navbar.
+
+step 5 : you can log out now. You name will be disappeard.
+
+## 'consult to the Doctor'
+
+you can consult to a doctor from this page.
+drop a message and it will be sent to the email of the doctor.
+your query will be resolved .
+
+there are step by step proccess how you can consult a doctor.
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
