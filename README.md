@@ -25,25 +25,7 @@ Netlify link :- https://medical-hub.vercel.app/
   <li>Checkout Page</li>
   <hr><br>
   <h4>Homepage</h4>
- <img src="./frontend/src/assets/readme images/Screenshot from 2022-07-24 12-57-53.png" alt="1mg ScreenShot currently unavailable"/>
- <img src="./frontend/src/assets/readme images/Screenshot from 2022-07-24 12-58-05.png" alt="1mg ScreenShot currently unavailable"/>
- <img src="./frontend/src/assets/readme images/Screenshot from 2022-07-24 12-58-12.png" alt="1mg ScreenShot currently unavailable"/>
-  <h4>Footer</h4>
- <img src="./frontend/src/assets/readme images/Screenshot from 2022-07-24 12-58-20.png" alt="1mg ScreenShot currently unavailable"/>
-  <hr>
-  
-  <h4>Product Page</h4>
-  <img src="./frontend/src/assets/readme images/Screenshot from 2022-07-24 12-58-58.png" alt="1mg ScreenShot currently unavailable"/>
-  
-  <hr>
-  <h4>Product Details</h4>
-  <img src="/frontend/src/assets/readme images/Screenshot from 2022-07-24 12-59-10.png" alt="1mg ScreenShot currently unavailable"/>
-  <hr>
-  <h4>Cart Page</h4>
- <img src="/frontend/src/assets/readme images/Screenshot from 2022-07-24 12-59-18.png" alt="1mg ScreenShot currently unavailable"/>
-  <hr>
-  <h4>Payment and Checkout</h4>
-   <img src="/frontend/src/assets/readme images/Screenshot from 2022-07-24 12-59-32.png" alt="1mg ScreenShot currently unavailable"/>
+
   <hr>
   <h4>Service Page</h4>
 <h2>Team Members :</h2>
