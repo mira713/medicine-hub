@@ -28,6 +28,12 @@ Netlify link :- https://medical-hub.vercel.app/
   <hr><br>
   <h4>Homepage</h4>
 <img src="medical-hub/screenshots/Screenshot (144).png" alt="homepage"/>
+  <img src="medical-hub/screenshots/Screenshot (145).png" alt="homepage"/>
+  <img src="medical-hub/screenshots/Screenshot (146).png" alt="homepage"/>
+  <img src="medical-hub/screenshots/Screenshot (147).png" alt="homepage"/>
+  <img src="medical-hub/screenshots/Screenshot (148).png" alt="homepage"/>
+  <img src="medical-hub/screenshots/Screenshot (149).png" alt="homepage"/>
+  <img src="medical-hub/screenshots/Screenshot (150).png" alt="homepage"/>
   <hr>
   <h4>Service Page</h4>
 <h2>Team Members :</h2>
