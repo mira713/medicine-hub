@@ -1,8 +1,10 @@
-# Getting Started with Create React App
+# this website has been built by a team of five members 
+#Mitali Sinha, Samruddhi chavan, Pallavi Jain, Priyanshu Pawar and Shreyas Birajdar.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Available Libraries Used :-
+Chakra UI, Axios, React-Icons, Slick-Carausel
 
 In the project directory, you can run:
 
@@ -14,12 +16,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### 'Feature of Application'
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Sign-up/Login, Add to Cart, Admin Panel, Payment Feature, Consult to a Doctor Feature, Search for Products etc.
 
-### `npm run build`
+### `Sign-up/Login`
+
+step 1 : One can Sign-up in our webSite and the main navBar will show his/her name on the main page.
+step 2 : click on sign-up
+step 3 : put your name and 
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
