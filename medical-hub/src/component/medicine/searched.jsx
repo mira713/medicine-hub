@@ -1,3 +1,5 @@
+
+
 import React from 'react'
 import { useEffect,useState } from 'react';
 import {
@@ -11,6 +13,7 @@ import {
   } from "@chakra-ui/react";
   import styles from "./ProductCarousel.module.css";
   import Filter from "./Filter";
+import AddCart from '../../Pages/AddCart';
   
 
 let data= [
@@ -44,10 +47,38 @@ let data= [
     },
     {
         "id" : 5,
-        "src" : "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/ncla4uynzqpe9h6zuphn.jpg",
+        "src" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPv-gUNIuokMSLpxh422xAvpb58FX0qmBuqw&usqp=CAU",
         "price" : 128,
         "title" : "Detol Liquid Handwash",
-        "name" : "detol handwash"
+        "name" : "detol"
+    },
+    {
+      "id" : 6,
+      "src" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8xhKz6Rp5URBA5r2Wv7FTbjnPOcgRxlgbuQ&usqp=CAU",
+      "price" : 200,
+      "title" : "Detol Liquid",
+      "name" : "detol"
+    },
+    {
+      "id" : 7,
+      "src" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCqjwqkMPyhLnCcPWiqy8xcnCdrI2dWVCTsw&usqp=CAU",
+      "price" : 170,
+      "title" : "Detol Liquid KeetNashak",
+      "name" : "detol"
+    },
+    {
+      "id" : 8,
+      "src" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb5wzSDtanuuELvcFtHmHeJL-zJ1mTArWLYw&usqp=CAU",
+      "price" : 150,
+      "title" : "Detol Liquid Combo",
+      "name" : "detol"
+    },
+    {
+      "id" : 9,
+      "src" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYY7uc0qXurH5RDpg_Ee-dDq-KrSFWjYby_A&usqp=CAU",
+      "price" : 99,
+      "title" : "Detol Liquid Powder",
+      "name" : "detol"
     }
 ]
 const Payment = () => {
@@ -60,12 +91,14 @@ const Payment = () => {
       console.log(val);
     };
   useEffect(()=>{
+    let arr=[];
     let k = localStorage.getItem('searched');
     data.map((e)=>{
       if(e.name===k){
-        setData([...da,e])
+        arr.push(e)
       }
      })
+     setData(arr)
   },[])
   return (
     <div>
@@ -142,7 +175,7 @@ const Payment = () => {
                 mb={"10px"}
                 fontWeight={600}
               >
-                ADD
+                  <AddCart key={p.id} prodData={p} />
               </Heading>
               </Flex>
             </GridItem>
