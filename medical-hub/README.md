@@ -1,4 +1,6 @@
-# this website has been built by a team of five members 
+
+# macho-wind(clone of 1mg)
+### this website has been built by a team of five members 
 #Mitali Sinha, Samruddhi chavan, Pallavi Jain, Priyanshu Pawar and Shreyas Birajdar.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
