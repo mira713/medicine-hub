@@ -30,17 +30,17 @@ const AllRoute = () => {
       <Route path="/Doctor" element={<Doctor />} />
       <Route path="/medicine" element={<Medicine />} />
       <Route path="/checkout/payment-information" element={<Payment />} />
-      <Route path="/success" element={<Success></Success>} />
+      <Route path="/success" element={<Success/>} />
 
       <Route path="/prolisting" element={<ProListing />}></Route>
       <Route path="/product/create" element={<ProCreate />}></Route>
       <Route path="/product/detail/:proid" element={<ProDetail />}></Route>
       <Route path="/product/edit/:proid" element={<ProEdit />}></Route>
-      <Route path="/" element={<Home />} />
-      <Route path="/login" element={<Login />}></Route>
-      <Route path="/signup" element={<Signup />}></Route>
-      <Route path="/Doctor" element={<Doctor />} />
-      <Route path="/medicine" element={<Medicine />} />
+      {/* <Route path="/" element={<Home />} /> */}
+      {/* <Route path="/login" element={<Login />}></Route> */}
+      {/* <Route path="/signup" element={<Signup />}></Route> */}
+      {/* <Route path="/Doctor" element={<Doctor />} />
+      <Route path="/medicine" element={<Medicine />} /> */}
       <Route path="/Searched" element={<Searched />} />
       <Route path="/LabTests" element={<LabTests />} />
 
