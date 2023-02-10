@@ -1,5 +1,6 @@
 import { Box, Grid, GridItem, Image, Flex, Text, Show } from "@chakra-ui/react";
 import React from "react";
+import { Link } from "react-router-dom";
 import Footer4 from "./Footer4";
 import Footer5 from "./Footer5";
 
@@ -253,8 +254,8 @@ const Footer3 = () => {
                     color="white"
                     borderRadius="4"
                     _hover={{ cursor: "pointer" }}
-                  >
-                    SIGN UP
+                  > <Link to={"/login"}>SIGN UP</Link>
+                    
                   </Box>
                 </Box>
               </Box>

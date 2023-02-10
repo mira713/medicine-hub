@@ -1,4 +1,4 @@
-import { Box, Radio, Text, Image, Select, Button } from "@chakra-ui/react";
+import { Box, Radio, Text, Image, Select, Button, useToast } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
@@ -11,6 +11,7 @@ import axios from "axios";
 import CartCarousel from "./CartCarousel";
 
 const Cart = () => {
+  const Toast=useToast();
   const cart_Data = useSelector((state) => state.cart);
   console.log(cart_Data, "cartData");
 
@@ -70,10 +71,26 @@ const Cart = () => {
       .then((res) => {
         // console.log(res);
         dispatch(cartData());
+        Toast({
+          title: "Succesfull",
+          description: "Item Removed from Cart Successfully",
+          position: "top",
+          status: "success",
+          duration: 9000,
+          isClosable: true,
+        });
       })
       .catch((e) => {
         console.log(e);
         dispatch(cartData());
+        Toast({
+          title: "Succesfull",
+          description: "Item Removed from Cart Successfully",
+          position: "top",
+          status: "success",
+          duration: 9000,
+          isClosable: true,
+        });
       });
   };
   return (

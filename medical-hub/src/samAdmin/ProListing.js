@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { Heading } from '@chakra-ui/react'
 import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
@@ -44,8 +45,9 @@ const ProListing = () => {
     <div className="container">
       <div className="card">
         <div className="card-title">
-          <h1>Admin Page</h1>
-          <h1>Product Listing</h1>
+          <Heading as='h1' size='4xl' textAlign={"center"}>Admin Page</Heading>
+          <Heading as='h1' size='1xl' textAlign={"center"}>Product Listing</Heading>
+          
         </div>
         <div className="card-body">
           <div className="divbtn">

@@ -1,3 +1,5 @@
+
+
 import React from 'react'
 import { useEffect,useState } from 'react';
 import {
@@ -11,6 +13,7 @@ import {
   } from "@chakra-ui/react";
   import styles from "./ProductCarousel.module.css";
   import Filter from "./Filter";
+import AddCart from '../../Pages/AddCart';
   
 
 let data= [
@@ -172,7 +175,7 @@ const Payment = () => {
                 mb={"10px"}
                 fontWeight={600}
               >
-                ADD
+                  <AddCart key={p.id} prodData={p} />
               </Heading>
               </Flex>
             </GridItem>

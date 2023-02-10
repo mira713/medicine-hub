@@ -11,7 +11,7 @@ import {
   } from "@chakra-ui/react";
   import React, {useState} from "react";
   import { FaSearch, FaSearchLocation } from "react-icons/fa";
-  import {useNavigate} from "react-router-dom"
+  import {Link, useNavigate} from "react-router-dom"
   
   function SearchNav() {
     let navigate = useNavigate()
@@ -73,8 +73,8 @@ import {
               fontWeight="300"
               _hover={{}}
               py="0px"
-            >
-              Quick Order
+            ><Link to={"/cart"}>  Quick Order</Link>
+            
             </Button>
           </Flex>
         </Flex>

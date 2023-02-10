@@ -1,4 +1,4 @@
-import { Box, Button } from "@chakra-ui/react";
+import { Box, Button,  useToast } from "@chakra-ui/react";
 import axios from "axios";
 import React, { useEffect } from "react";
 import { useState } from "react";
@@ -8,6 +8,7 @@ import { cartData } from "../redux/ProductAction";
 
 // keep the add to cart component here
 const AddCart = (mydata) => {
+  const Toast = useToast();
   const [flag, setFlag] = useState(false);
   const [count, setCount] = React.useState(1);
   const dispatch = useDispatch();
@@ -34,11 +35,20 @@ const AddCart = (mydata) => {
      
     };
     axios.post("https://link-ten-zeta.vercel.app/cart", finallyPost);
-    alert("Item Added to the Cart");
+    Toast({
+      title: "Succesfull",
+      description: "Item Added to Cart Successfully",
+      position: "top",
+      status: "success",
+      duration: 9000,
+      isClosable: true,
+    });
 
     setFlag(true);
 
     dispatch(cartData(finallyPost));
+    
+
   };
 
   return (
