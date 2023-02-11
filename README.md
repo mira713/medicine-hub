@@ -37,7 +37,7 @@ Netlify link :- https://medical-hub.vercel.app/
   <img src="medical-hub/screenshots/Screenshot (148).png" alt="homepage"/>
   <p>Sign-up form</p>
   <img src="medical-hub/screenshots/Screenshot (150).png" alt="homepage"/>
-  <p>Some sort functions</P>
+  <p>Some sort functions based on price and rating</P>
   <img src="medical-hub/screenshots/s7sortFunction.png" alt="homepage"/>
   <p>The main category/product page of our website</p>
   <img src="medical-hub/screenshots/s6categorypage.png" alt="homepage"/>
@@ -47,7 +47,7 @@ Netlify link :- https://medical-hub.vercel.app/
   <img src="medical-hub/screenshots/s3carousel.png" alt="homepage"/>
   <p>The main payment page</p>
   <img src="medical-hub/screenshots/s2paymentPage.png" alt="homepage"/>
-  <p>payemt confirm!!</p>
+  <p>payment confirm!!</p>
   <img src="medical-hub/screenshots/s1successfulPayment.png" alt="homepage"/>
   <hr>
   <h4>Service Page</h4>
