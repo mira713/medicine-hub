@@ -33,8 +33,8 @@ Netlify link :- https://medical-hub.vercel.app/
   <img src="medical-hub/screenshots/Screenshot (146).png" alt="homepage"/>
   <P>Login form</p>
   <img src="medical-hub/screenshots/Screenshot (147).png" alt="homepage"/>
+  <p>We have an admin panel in our website</P>
   <img src="medical-hub/screenshots/Screenshot (148).png" alt="homepage"/>
-  <img src="medical-hub/screenshots/Screenshot (149).png" alt="homepage"/>
   <img src="medical-hub/screenshots/Screenshot (150).png" alt="homepage"/>
   <img src="medical-hub/screenshots/s7sortFunction.png" alt="homepage"/>
   <img src="medical-hub/screenshots/s6categorypage.png" alt="homepage"/>
