@@ -1,10 +1,12 @@
-# macho-wind-7217
-Netlify link :- https://medical-hub.vercel.app/
+
+## Deployment
+
+This section has moved here: vercel link [https://medical-hub-zeta.vercel.app] <br> 
 
 
 
 <hr><br>
-<h2>Tech Stack<h2/>
+<h3>Tech Stack<h3/>
   <li>React.js</li>
   <li>Redux</li>
   <li>HTML</li>
