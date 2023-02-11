@@ -35,13 +35,19 @@ Netlify link :- https://medical-hub.vercel.app/
   <img src="medical-hub/screenshots/Screenshot (147).png" alt="homepage"/>
   <p>We have an admin panel in our website</P>
   <img src="medical-hub/screenshots/Screenshot (148).png" alt="homepage"/>
+  <p>Sign-up form</p>
   <img src="medical-hub/screenshots/Screenshot (150).png" alt="homepage"/>
+  <p>Some sort functions</P>
   <img src="medical-hub/screenshots/s7sortFunction.png" alt="homepage"/>
+  <p>The main category/product page of our website</p>
   <img src="medical-hub/screenshots/s6categorypage.png" alt="homepage"/>
+  <p>Search for the product here</p>
   <img src="medical-hub/screenshots/s5search.png" alt="homepage"/>
-  <img src="medical-hub/screenshots/s4footer.png" alt="homepage"/>
+  <p>some carousels</p>
   <img src="medical-hub/screenshots/s3carousel.png" alt="homepage"/>
+  <p>The main payment page</p>
   <img src="medical-hub/screenshots/s2paymentPage.png" alt="homepage"/>
+  <p>payemt confirm!!</p>
   <img src="medical-hub/screenshots/s1successfulPayment.png" alt="homepage"/>
   <hr>
   <h4>Service Page</h4>
