@@ -1,4 +1,6 @@
+## Deployment
 
+This section has moved here: vercel link [https://medical-hub-zeta.vercel.app] <br> 
 <hr><br>
 <h3>Tech Stack<h3/>
   <li>React.js</li>
@@ -22,10 +24,6 @@
   <li>Payment Page<li>
   <li>Checkout Page</li>
   <hr><br>
-  
-## Deployment
-
-This section has moved here: vercel link [https://medical-hub-zeta.vercel.app] <br> 
 
   <h4>Homepage</h4>
   <img src="medical-hub/screenshots/Screenshot (145).png" alt="homepage"/>
