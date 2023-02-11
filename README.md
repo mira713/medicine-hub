@@ -51,7 +51,7 @@ This section has moved here: vercel link [https://medical-hub-zeta.vercel.app] <
   <hr>
   <h4>Service Page</h4>
 <h2>Team Members :</h2>
-  <li><a href="">
+  <li><a href="https://github.com/mira713">
 Mitali Sinha</a></li>
   <li><a href="">Pallavi Jain</a></li>
   <li><a href="">
