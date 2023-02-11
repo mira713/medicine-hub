@@ -1,3 +1,4 @@
+<h1 textAlign="center">Medical Hub</h1>
 ## Deployment
 
 This section has moved here: vercel link [https://medical-hub-zeta.vercel.app] <br> 
