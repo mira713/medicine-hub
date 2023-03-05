@@ -42,12 +42,8 @@ This section has moved here: vercel link [https://medical-hub-zeta.vercel.app] <
   <img src="medical-hub/screenshots/s6categorypage.png" alt="homepage"/>
   <p>Search for the product here</p>
   <img src="medical-hub/screenshots/s5search.png" alt="homepage"/>
-  <p>some carousels</p>
-  <img src="medical-hub/screenshots/s3carousel.png" alt="homepage"/>
   <p>The main payment page</p>
   <img src="medical-hub/screenshots/s2paymentPage.png" alt="homepage"/>
-  <p>payment confirm!!</p>
-  <img src="medical-hub/screenshots/s1successfulPayment.png" alt="homepage"/>
   <hr>
   <h4>Service Page</h4>
 <h2>Team Members :</h2>
