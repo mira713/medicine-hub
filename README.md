@@ -28,14 +28,10 @@ This section has moved here: vercel link [https://medical-hub-zeta.vercel.app] <
 
   <h4>Homepage</h4>
   <img src="medical-hub/screenshots/Screenshot (145).png" alt="homepage"/>
-  <p>Footer of the website</p>
-  <img src="medical-hub/screenshots/Screenshot (146).png" alt="homepage"/>
-  <P>Login form</p>
+  <P>Login form / sign-up form</p>
   <img src="medical-hub/screenshots/Screenshot (147).png" alt="homepage"/>
   <p>We have an admin panel in our website</P>
   <img src="medical-hub/screenshots/Screenshot (148).png" alt="homepage"/>
-  <p>Sign-up form</p>
-  <img src="medical-hub/screenshots/Screenshot (150).png" alt="homepage"/>
   <p>Some sort functions based on price and rating</P>
   <img src="medical-hub/screenshots/s7sortFunction.png" alt="homepage"/>
   <p>The main category/product page of our website</p>
