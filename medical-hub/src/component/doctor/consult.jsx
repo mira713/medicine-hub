@@ -111,7 +111,7 @@ let onChange=(e)=>{
 const sendEmail = (e) => {
   e.preventDefault();
 
-  emailjs.sendForm('service_n4ys4b3', 'template_04wzh47', form.current, 'hsInv32YWaPjiMsSl')
+  emailjs.sendForm('service_n4ys4b', 'template_04wzh4', form.current, 'hsInv32YWaPjiMsS')
     .then((result) => {
         console.log(result.text);
         toast({
